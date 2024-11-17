@@ -161,7 +161,7 @@ end
 
 function SmoothRunComms(tab)
     local timestart = 0.01
-    local timeinterval = 0.01
+    local timeinterval = 0.05
     for key,comm in ipairs(tab) do
         timer.Simple(timestart, function() 
             _G[comm]()
